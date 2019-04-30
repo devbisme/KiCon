@@ -1,0 +1,8 @@
+ERC WARNING: Only one pin (POWER-IN pin 2/VDD of PIC10F220-IP/U1) attached to net Vdd.
+ERC WARNING: No drivers for net Vdd
+ERC WARNING: Insufficient drive current on net Vdd for pin POWER-IN pin 2/VDD of PIC10F220-IP/U1
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R1) attached to net Vin.
+ERC WARNING: Insufficient drive current on net GND for pin POWER-IN pin 7/VSS of PIC10F220-IP/U1
+ERC WARNING: Unconnected pin: BIDIRECTIONAL pin 3/GP2 of PIC10F220-IP/U1.
+ERC WARNING: Unconnected pin: BIDIRECTIONAL pin 4/GP1 of PIC10F220-IP/U1.
+ERC WARNING: Unconnected pin: INPUT pin 8/GP3 of PIC10F220-IP/U1.

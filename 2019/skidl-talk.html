@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>skidl-talk</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="an-uninteresting-slide" class="slide level2">
+<h2>An Uninteresting Slide</h2>
+<ul>
+<li class="fragment">An uninteresting bullet point.</li>
+<li class="fragment">Hopefully, things improve…</li>
+</ul>
+</section>
+<section id="section" class="slide level2">
+<h2>1968</h2>
+</section>
+<section id="seventh-grade-project" class="slide level2">
+<h2>Seventh-Grade Project</h2>
+<p><img data-src="seventh-grade-project.png" /></p>
+<aside class="notes">
+<ul>
+<li>Simple components</li>
+<li>Shows what-connects-to-what</li>
+<li>Left-to-right signal flow</li>
+<li>Clear circuit function</li>
+</ul>
+</aside>
+</section>
+<section id="effort-vs.-clarity" class="slide level2">
+<h2>Effort vs. Clarity</h2>
+<p><img data-src="seventh-grade-project-effort-clarity.png" /></p>
+<aside class="notes">
+<p>Dick and Jane Primer</p>
+</aside>
+</section>
+<section id="section-1" class="slide level2">
+<h2>1975</h2>
+</section>
+<section id="opamp" class="slide level2">
+<h2>Opamp</h2>
+<p><img data-src="741_transistor_level.png" /></p>
+<aside class="notes">
+<p>But doesn’t this schematic look nice?</p>
+<ul>
+<li>Simple components</li>
+<li>Shows what connects to what.</li>
+<li>left-to-right signal flow</li>
+<li>Clear circuit function:
+<ul>
+<li>Differential input stage</li>
+<li>Level shifters</li>
+<li>Totem-pole output driver</li>
+</ul></li>
+</ul>
+</aside>
+</section>
+<section id="effort-vs.-clarity-1" class="slide level2">
+<h2>Effort vs. Clarity</h2>
+<p><img data-src="741_transistor_level-effort-clarity.png" /></p>
+</section>
+<section id="section-2" class="slide level2">
+<h2>1981</h2>
+</section>
+<section id="microprocessor" class="slide level2">
+<h2>Microprocessor</h2>
+<p><img data-src="microprocessor.png" /></p>
+<aside class="notes">
+<ul>
+<li>Tells what-connects-to-what</li>
+<li>Complex components with some well-defined I/O</li>
+<li>Back-and-forth signal flow between processor and memory</li>
+<li>Circuit function is hidden in software</li>
+</ul>
+</aside>
+</section>
+<section id="effort-vs.-clarity-2" class="slide level2">
+<h2>Effort vs. Clarity</h2>
+<p><img data-src="microprocessor-effort-clarity.png" /></p>
+<aside class="notes">
+<p>Tom Clancy novel: Complicated interconnections between generic parts with hidden intentions.</p>
+</aside>
+</section>
+<section id="section-3" class="slide level2">
+<h2>1995</h2>
+</section>
+<section id="motherboard" class="slide level2">
+<h2>80486 Motherboard</h2>
+<p><img data-src="80486_motherboard_1.png" /></p>
+<aside class="notes">
+<ul>
+<li>Main processor.</li>
+</ul>
+</aside>
+</section>
+<section id="motherboard-contd" class="slide level2">
+<h2>80486 Motherboard (cont’d)</h2>
+<p><img data-src="80486_motherboard_2.png" /></p>
+<aside class="notes">
+<ul>
+<li>North and South bridges.</li>
+<li>15 more pages of this stuff.</li>
+</ul>
+</aside>
+</section>
+<section id="effort-vs.-clarity-3" class="slide level2">
+<h2>Effort vs. Clarity</h2>
+<p><img data-src="80486_motherboard-effort-clarity.png" /></p>
+<aside class="notes">
+<p>Like Stephen King’s “The Stand”: long and leaves you with a feeling of horror.</p>
+</aside>
+</section>
+<section id="and-beyond" class="slide level2">
+<h2>2000 and Beyond</h2>
+</section>
+<section id="socs-fpgas-oh-my" class="slide level2">
+<h2>SOCs, FPGAs, Oh My!</h2>
+<p><img data-src="vc707_1.png" /></p>
+<aside class="notes">
+<ul>
+<li>2000-pin devices</li>
+<li>Massive integration of analog/digital blocks</li>
+<li>Wide buses / serial buses / packet comms</li>
+<li>Tells what-connects-to-what</li>
+<li>Too many wires =&gt; use stubs and labels</li>
+<li>Circuit function is no longer depictable</li>
+</ul>
+</aside>
+</section>
+<section id="socs-fpgas-oh-my-contd" class="slide level2">
+<h2>SOCs, FPGAs, Oh My! (cont’d)</h2>
+<p><img data-src="vc707_2.png" /></p>
+</section>
+<section id="socs-fpgas-oh-my-contd-1" class="slide level2">
+<h2>SOCs, FPGAs, Oh My! (cont’d)</h2>
+<p><img data-src="vc707_3.png" /></p>
+</section>
+<section id="socs-fpgas-oh-my-contd-2" class="slide level2">
+<h2>SOCs, FPGAs, Oh My! (cont’d)</h2>
+<p><img data-src="vc707_4.png" /></p>
+</section>
+<section id="effort-vs.-clarity-4" class="slide level2">
+<h2>Effort vs. Clarity</h2>
+<p><img data-src="vc707-effort-clarity.png" /></p>
+<aside class="notes">
+<p>Like James Joyce’s “Finnigans Wake”: only the author understands it and nobody else has gotten past page three.</p>
+</aside>
+</section>
+<section id="the-progression" class="slide level2">
+<h2>The Progression</h2>
+<ul>
+<li class="fragment">Started small and things worked great!</li>
+<li class="fragment">Used a bit more, still OK.</li>
+<li class="fragment">Used even more. Marginal results.</li>
+<li class="fragment">Using heavily. No longer sure what’s going on…</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Similar to a drug addiction.</li>
+</ul>
+</aside>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<p> </p>
+<section id="schematics-heroin-title" class="slide level2" data-background="schematics_heroin_title.png">
+</section>
+</section>
+<section id="section-5" class="slide level2">
+<h2>2016</h2>
+<p class="fragment" style="font-size:24pt">
+forum.kicad.info/t/pcbnew-without-eeschema-again/3306
+</p>
+<p class="fragment" style="color:gold">
+“I’d like to create … netlist information from non-graphical tools…”
+</p>
+<ul>
+<li class="fragment">Typing is faster than drawing</li>
+<li class="fragment">Computers handle text efficiently</li>
+<li class="fragment">Every OS has a text editor</li>
+<li class="fragment">Scripts can automate tasks</li>
+<li class="fragment">Searching is straightforward</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Original poster: Alex Lopez (alez).</li>
+<li>Such a good idea! Has it been done before?</li>
+</ul>
+</aside>
+</section>
+<section id="its-been-done-before" class="slide level2">
+<h2>It’s Been Done Before</h2>
+<ul>
+<li class="fragment">PHDL</li>
+<li class="fragment">BYU</li>
+<li class="fragment">Java</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>But it died!</li>
+</ul>
+</aside>
+</section>
+<section id="but-phdl-died" class="slide level2">
+<h2>But PHDL Died</h2>
+<p><img data-src="phdl_forum_traffic.png" /></p>
+<aside class="notes">
+<ul>
+<li>As judged by forum traffic.</li>
+<li>https://sourceforge.net/p/phdl/mailman/phdl-devel/?viewmonth=201506</li>
+<li>Since the dawn of time, scavengers have learned the value of dead things…</li>
+</ul>
+</aside>
+</section>
+<section id="tasty-and-doesnt-fight-back" class="slide level2">
+<h2><span style="font-size:40pt">Tasty and Doesn’t Fight Back!</span></h2>
+<p><img data-src="roadkill_cooking.jpg" /></p>
+</section>
+<section id="phdl---the-tasty-bits" class="slide level2">
+<h2>PHDL - the Tasty Bits</h2>
+<ul>
+<li class="fragment">Concise, repetitive part instantiation</li>
+<li class="fragment">Concise, bulk connectivity</li>
+<li class="fragment">Encapsulation</li>
+<li class="fragment">Hierarchy</li>
+</ul>
+<aside class="notes">
+<p>If it’s dead, better nose it to find out why…</p>
+</aside>
+</section>
+<section id="why-did-phdl-die" class="slide level2">
+<h2>Why Did PHDL Die?</h2>
+<ul>
+<li class="fragment">Very problem-specific</li>
+<li class="fragment">Lacked general-purpose capabilities</li>
+<li class="fragment">No ecosystem (libraries, utilities)</li>
+<li class="fragment">No user community</li>
+</ul>
+<aside class="notes">
+<p>It’s like a little girl in the desert.</p>
+</aside>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<p><img data-src="merry_go_round_desert.png" /></p>
+<aside class="notes">
+<p>She’s wandered way out into the desert and now she’s sad nobody is around to play with her merry-go-round. But nobody will come all the way out into the desert just to play with a toy merry-go-round. Except this guy.</p>
+</aside>
+</section>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<p><img data-src="merry_go_round_desert_grim_reaper.png" /></p>
+<aside class="notes">
+<ul>
+<li>Except this guy!</li>
+<li>How to correct these shortcomings of PHDL???</li>
+</ul>
+</aside>
+</section>
+<section id="myhdl" class="slide level2">
+<h2>MyHDL</h2>
+<ul>
+<li class="fragment">Built upon a general-purpose language: Python</li>
+<li class="fragment">Adds objects for describing digital hardware</li>
+<li class="fragment">Provides a functional simulation engine</li>
+<li class="fragment">Outputs VHDL or Verilog for synthesis</li>
+</ul>
+</section>
+<section id="phdl-myhdl-skidl" class="slide level2">
+<h2>PHDL + MyHDL → SKiDL</h2>
+<ul>
+<li class="fragment">Use Python for general-purpose computing</li>
+<li class="fragment">Add <em>part</em> and <em>net</em> objects</li>
+<li class="fragment">Provide methods for connecting them</li>
+<li class="fragment">Output a netlist to PCBNEW</li>
+</ul>
+</section>
+<section id="basic-skidl-objects" class="slide level2">
+<h2>Basic SKiDL Objects</h2>
+<ul>
+<li class="fragment"><span style="color:gold"><code>Pin</code></span>: a terminal with a number, name, I/O type, …</li>
+<li class="fragment"><span style="color:gold"><code>Part</code></span>: a bag of <code>Pin</code>s</li>
+<li class="fragment"><span style="color:gold"><code>Net</code></span>: a connection between one or more <code>Pin</code>s</li>
+<li class="fragment"><span style="color:gold"><code>Bus</code></span>: an array of <code>Net</code>s</li>
+</ul>
+</section>
+<section id="start-with-a-part" class="slide level2">
+<h2>Start With a Part</h2>
+<pre class="fragment sourceCode py"> >>> uc = Part('MCU_Microchip_PIC10', 'PIC10F220-IP')</pre>
+<pre class="fragment sourceCode py"> >>> uc</pre>
+<pre class="fragment sourceCode py" style="color:lime">PIC10F220-IP (PIC10F222-IP): 512W Flash, 24B SRAM, PDIP8
+    Pin U1/2/VDD/POWER-IN
+    Pin U1/3/GP2/BIDIRECTIONAL
+    Pin U1/4/GP1/BIDIRECTIONAL
+    Pin U1/5/GP0/BIDIRECTIONAL
+    Pin U1/7/VSS/POWER-IN
+    Pin U1/8/GP3/INPUT</pre>
+</section>
+<section id="create-nets" class="slide level2">
+<h2>Create Nets</h2>
+<ul>
+<li class="fragment"><code>n = Net()</code></li>
+<li class="fragment"><code>n = Net('my_net')</code></li>
+<li class="fragment"><code>b = Bus('my_bus', 5)</code></li>
+</ul>
+</section>
+<section id="connect-pins-and-nets" class="slide level2">
+<h2>Connect Pins and Nets</h2>
+<ul>
+<li class="fragment">
+<span style="color:gold">[ ]</span> to access part pins and bus nets
+</li>
+<li class="fragment">
+<span style="color:gold">+=</span> to connect stuff
+</li>
+<li class="fragment">
+Pin to net: <span style="color:gold"><code>n += uc[5]</code></span>
+</li>
+<li class="fragment">
+Pin to pin: <span style="color:gold"><code>uc[3] += uc[4]</code></span>
+</li>
+<li class="fragment">
+Bus to part: <span style="color:gold"><code>b[3:0]+=uc['gp3,gp2,gp1,gp0']</code></span>
+</li>
+<li class="fragment">
+Bus to part: <span style="color:gold"><code>b[3:0] += uc['gp[3:0]']</code></span>
+</li>
+</ul>
+</section>
+<section id="example-1" class="slide level2">
+<h2>Example #1</h2>
+<table>
+<tr>
+<td style="vertical-align:top;">
+<pre class="sourceCode py">
+<span class="fragment">vdd = Net('Vdd')</span>
+<span class="fragment">gnd = Net('GND')</span>
+<span class="fragment">vin = Net('Vin')</span>
+
+<span class="fragment">r1 = Part('device','R',value='4.7K')</span>
+<span class="fragment">r2 = r1(value='2.2K')</span>
+<span class="fragment">vin += r1[1]</span>
+<span class="fragment">r1[2] += r2[1]</span>
+<span class="fragment">r2[2] += gnd</span>
+
+<span class="fragment">uc = Part('MCU_Microchip_PIC10',
+          'PIC10F220-IP')</span>
+<span class="fragment">uc['VDD'] += vdd</span>
+<span class="fragment">uc['VSS'] += gnd</span>
+<span class="fragment">uc['gp0'] += r2[1]</span>
+</pre>
+</td>
+<td style="vertical-align:top;">
+<img src="vdiv_schematic.png" width=300 />
+</td>
+</tr>
+</table>
+<aside class="notes">
+<ul>
+<li>A microcontroller sampling a voltage passed through a voltage divider.</li>
+<li>Every SKiDL statement corresponds to some element in the schematic.</li>
+<li>The effort to create SKiDL or schematic is nearly the same.</li>
+<li>The schematic is clearer.</li>
+</ul>
+</aside>
+</section>
+<section id="example-2" class="slide level2">
+<h2>Example #2</h2>
+<table>
+<tr>
+<td style="vertical-align:top;">
+<pre class="sourceCode py">
+<span class="fragment">b = Bus('chplx', 4)                      </span>
+<span class="fragment">for hi in b:                             </span>
+<span class="fragment">    for lo in b:                         </span>
+<span class="fragment">        if hi != lo:                     </span>
+<span class="fragment">            led = Part('device','LED')   </span>
+<span class="fragment">            hi += led['A']               </span>
+<span class="fragment">            lo += led['K']               </span>
+</pre>
+</td>
+<td style="vertical-align:top;">
+<img src="chplx_schematic.png" width=300 />
+</td>
+</tr>
+</table>
+<aside class="notes">
+<ul>
+<li>Once I have two different nets, I can connect an LED between them.</li>
+<li>SKiDL statements correspond to <em>multiple</em> elements in the schematic.</li>
+<li>The effort to create SKiDL code is much less than the schematic.</li>
+<li>Neither schematic or SKiDL is clearer.</li>
+</ul>
+</aside>
+</section>
+<section id="example-3" class="slide level2">
+<h2>Example #3</h2>
+<table>
+<tr>
+<td style="vertical-align:top;">
+<pre class="sourceCode py">
+<span class="fragment">@subcircuit                           </span>
+<span class="fragment">def chplx_leds(b,                     </span>
+<span class="fragment">        ledt=Part('device',           
+                 'LED',TEMPLATE)):    </span>
+<span class="fragment">    for hi in b:                      
+        for lo in b:                  
+            if hi != lo:              
+                led = ledt()          
+                hi += led['A']        
+                lo += led['K']        </span>
+
+<span class="fragment">b1, b2 = Bus('B1',4), Bus('B2',5)     </span>
+<span class="fragment">chplx_leds(b1)                        </span>
+<span class="fragment">chplx_leds(b2)                        </span>
+</pre>
+</td>
+<td style="vertical-align:top;">
+<img src="dual_chplx_schematic.png" width=300 />
+</td>
+</tr>
+</table>
+<aside class="notes">
+<ul>
+<li>Encapsulate the previous example inside a function, and then call it twice to create two charlieplexed LED arrays.</li>
+<li>Demonstrates hierarchy/encapsulation and parameterization.</li>
+<li>The effort to create the SKiDL code is <em>much</em> less than the schematic.</li>
+</ul>
+</aside>
+</section>
+<section id="example-4" class="slide level2">
+<h2>Example #4</h2>
+<pre class="sourceCode py">
+<span class="fragment">vdd, gnd = Net('VDD'), Net('GND') <span style="color:gold"># power & ground nets.</span>        </span>
+                                                                                   
+<span class="fragment">c = Part('Device','C', TEMPLATE)  <span style="color:gold"># capacitor template.</span>         </span>
+                                                                                    
+<span class="fragment">uc = Part('MCU_Microchip_PIC16',                              
+          'PIC16F83-XXSO')        <span style="color:gold"># Microcontroller.</span>                                   </span>
+<span class="fragment">uc['VDD, VSS'] += vdd, gnd        <span style="color:gold"># Attach pwr, gnd to uC.</span>      </span>
+                                                                                    
+<span class="fragment">c_byp = c(value='10uF')           <span style="color:gold"># Add bypass capacitor.</span>       </span>
+<span class="fragment">c_byp[1,2] += vdd, vss                                          </span>
+                                                                                      
+<span class="fragment">xtal = Part('Device','Crystal')   <span style="color:gold"># Crystal.</span>                    </span>
+<span class="fragment">uc['OSC1, OSC2'] += xtal[1,2]     <span style="color:gold"># Attach crystal to uC.</span>       </span>
+                                                                                    
+<span class="fragment">c1, c2 = c(2, value='10pF')       <span style="color:gold"># Crystal trim caps.</span>          </span>
+<span class="fragment">c1[1,2] += xtal[1], gnd           <span style="color:gold"># Connect trim caps.</span>          </span>
+<span class="fragment">c2[1,2] += xtal[2], gnd                                         </span>
+                                                                                    
+<span class="fragment">chplx_leds(uc['RB[3:0]'])         <span style="color:gold"># 12 charlieplexed LEDs.</span>      </span>
+<span class="fragment">chplx_sws(uc['RA[3:0]'])          <span style="color:gold"># 12 charlieplexed switches.</span>  </span>
+</pre>
+<aside class="notes">
+<ul>
+<li>The charlieplexed switches are just like the charlieplexed LEDs except the LED is replaced with a switch and a diode.</li>
+<li>The effort to create SKiDL code is <em>much, much</em> less than the schematic.</li>
+<li>Shows the advantages of encapsulation and parameterization.</li>
+</ul>
+</aside>
+</section>
+<section id="netlist-layout" class="slide level2">
+<h2>Netlist → Layout</h2>
+<table>
+<tr>
+<td class="fragment" style="vertical-align:top;">
+<pre class="sourceCode py">
+...
+chplx_leds(uc['RB[3:0]'])
+chplx_sws(uc['RA[3:0]'])
+
+generate_netlist()
+</pre>
+</td>
+<td class="fragment" style="vertical-align:top;">
+<img src="chplx_pcbnew.png"/>
+</td>
+</tr>
+</table>
+</section>
+<section id="footprints" class="slide level2">
+<h2>Footprints?</h2>
+<p class="fragment">
+Where did the footprints come from?
+</p>
+<pre class="sourceCode py fragment">
+uc = Part('MCU_Microchip_PIC16', 'PIC16F83-XXSO',
+          footprint=
+            "KiCad_V5/Package_SO.pretty:SOIC-18W_7.5x11.6mm_P1.27mm")
+</pre>
+<aside class="notes">
+<ul>
+<li>Footprints are just text strings that locate KiCad footprint files.</li>
+<li>Long and unwieldly. Define in one place and use repeatedly.</li>
+<li>Used to use CVPCB, but it went away.</li>
+</ul>
+</aside>
+</section>
+<section id="parts" class="slide level2">
+<h2>Parts?</h2>
+<p class="fragment">
+How did you find the parts?
+</p>
+<pre class="fragment sourceCode python" style="color:lime">
+>>> search('pic10')
+</pre>
+<pre class="fragment sourceCode python" style="color:lime">
+WARNING: Could not open directory ''
+MCU_Microchip_PIC10.lib: PIC10F220-IMC (512W Flash, 24B SRAM, DFN8)
+MCU_Microchip_PIC10.lib: PIC10F320-IMC (512W Flash, 64B SRAM, DFN8)
+MCU_Microchip_PIC10.lib: PIC10F220-IOT (512W Flash, 24B SRAM, SOT-23-6)
+MCU_Microchip_PIC10.lib: PIC10F204-IMC (512W Flash, 24B SRAM, DFN8)
+MCU_Microchip_PIC10.lib: PIC10F320-IP (512W Flash, 64B SRAM, PDIP8)
+MCU_Microchip_PIC10.lib: PIC10F204-IOT (512W Flash, 24B SRAM, SOT-23-6)
+MCU_Microchip_PIC10.lib: PIC10F220-IP (512W Flash, 24B SRAM, PDIP8)
+MCU_Microchip_PIC10.lib: PIC10F320-IOT (512W Flash, 64B SRAM, SOT-23-6)
+MCU_Microchip_PIC10.lib: PIC10F200-IP (512W Flash, 24B SRAM, PDIP8)
+MCU_Microchip_PIC10.lib: PIC10F204-IP (512W Flash, 24B SRAM, PDIP8)
+MCU_Microchip_PIC10.lib: PIC10F200-IOT (512W Flash, 24B SRAM, SOT-23-6)
+MCU_Microchip_PIC10.lib: PIC10F200-IMC (512W Flash, 24B SRAM, DFN8)
+</pre>
+</section>
+<section id="skidl-fixes-common-problems" class="slide level2">
+<h2><span style="font-size:40pt">SKiDL Fixes Common Problems</span></h2>
+<ul>
+<li class="fragment">Trivialities <span class="fragment" style="color:gold">(Junction dot size? Really!?!)</span></li>
+<li class="fragment">Repetitive parts <span class="fragment" style="color:gold">(1000 * cap(value=“0.1uF”))</span></li>
+<li class="fragment">Mistaken disconnections</li>
+<li class="fragment">Power flags <span class="sourceCode python fragment" style="color:gold">(<code>diode['K'].drive=POWER</code>)</span></li>
+<li class="fragment">Version control <span class="fragment" style="color:gold">(diff just works)</span></li>
+<li class="fragment">Multiple boards in one project</li>
+</ul>
+</section>
+<section id="freebies" class="slide level2">
+<h2>Freebies!</h2>
+<ul>
+<li class="fragment">Standard res/cap values <span style="font-size:24pt;color:cyan">(pypi.org/project/eseries)</span></li>
+<li class="fragment">Normalizing values <span style="font-size:24pt;color:cyan">(github.com/ulikoehler/UliEngineering)</span></li>
+<li class="fragment"><code>PySpice</code> - ngspice interface</li>
+<li class="fragment"><code>scipy.optimize</code></li>
+</ul>
+<aside class="notes">
+<ul>
+<li>A way to access standard E24, E48 resistor/capacitor values: someone wrote it for me!</li>
+<li>A way to recognize that 4K7, 4.7K and 4700 are all the same value: someone wrote it for me!</li>
+<li>A way to run SPICE simulations from Python: someone wrote it for me!</li>
+<li>A way to optimize the performance of a circuit: someone wrote it for me!</li>
+</ul>
+</aside>
+</section>
+<section id="generative-circuits" class="slide level2">
+<h2>Generative Circuits</h2>
+<p><img data-src="generative_circuits.png" /></p>
+</section>
+<section id="multi-voltage-regulator" class="slide level2">
+<h2>Multi-Voltage Regulator</h2>
+<p><img data-src="vreg_by_hand.png" /></p>
+<aside class="notes">
+<ul>
+<li>Connect the 8 resistors and 8 switches to generate as many, 0.1V-spaced voltages as possible with the adjustable regulator.</li>
+</ul>
+</aside>
+</section>
+<section id="machine-generated-version" class="slide level2">
+<h2>Machine-Generated Version</h2>
+<p><img data-src="vreg_by_machine.png" /></p>
+<aside class="notes">
+<ul>
+<li>I gave the machine a random arrangement of resistors and switches and said “make it better!”</li>
+<li>This is what it came up with.</li>
+</ul>
+</aside>
+</section>
+<section id="man-vs.-machine" class="slide level2">
+<h2>Man vs. Machine</h2>
+<p><img data-src="vreg_outputs.png" /></p>
+<aside class="notes">
+<ul>
+<li>Machine-generated circuit is slightly less clumpy.</li>
+<li>Machine-generated can handle less regular cases like unequal number of switches and resistors or different values of resistors.</li>
+</ul>
+</aside>
+</section>
+<section id="documentation" class="slide level2">
+<h2>Documentation</h2>
+<ul>
+<li class="fragment">Python comments</li>
+<li class="fragment">Doc strings, Sphinx and autodoc</li>
+<li class="fragment">Attaching notes to circuits, parts, pins, nets, buses</li>
+<li class="fragment">Jupyter</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Jupyter is the 800-lb gorilla of documentation.</li>
+</ul>
+</aside>
+</section>
+<section id="jupyter" class="slide level2">
+<h2>Jupyter</h2>
+<p><img data-src="jupyter_ngspice_intfc.png" /></p>
+</section>
+<section id="section-8" class="slide level2">
+<h2></h2>
+<p><img src="jupyter_screen.png" height=600 /></p>
+<aside class="notes">
+<ul>
+<li>Rich media: pictures, circuit diagrams, videos.</li>
+<li>Include live calculations in your notebook.</li>
+<li>Have your documentation generate your circuit.</li>
+<li>Show the little girl again, but in a playground.</li>
+</ul>
+</aside>
+</section>
+<section id="section-9" class="slide level2">
+<h2></h2>
+<p><img data-src="merry_go_round_playground.png" /></p>
+<aside class="notes">
+<p>So where have we ended up? I hope here. The little girl is surrounded by friends. She’s not the center of attention, but that was never the point. They can play with her toy if they want, or they can do their own thing, if they want. And that seems like a pretty good situation. Except for this guy…</p>
+</aside>
+</section>
+<section id="section-10" class="slide level2">
+<h2></h2>
+<p><img data-src="merry_go_round_playground_grim_reaper.png" /></p>
+<aside class="notes">
+<p>But he’s always going to be around. And maybe that’s a good thing: everything has a start. Maybe everything needs an end, too. Like this talk.</p>
+</aside>
+</section>
+<section id="playground-rules" class="slide level2">
+<h2>Playground Rules</h2>
+<ul>
+<li class="fragment"><span class="sourceCode python" style="color:gold">pip install skidl</span></li>
+<li class="fragment">Design examples: <span class="sourceCode" style="color:gold">xesscorp.github.io/skidl</span></li>
+<li class="fragment">Netlist converter: <span class="sourceCode python" style="color:gold">netlist_to_skidl</span></li>
+</ul>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        transition: 'fade',
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>

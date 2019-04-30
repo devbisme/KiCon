@@ -1,0 +1,48 @@
+* To change the slide transitions to a fade (instead of a slide), I changed the end of the .html file from this:
+
+        <script>
+          // Full list of configuration options available at:
+          // https://github.com/hakimel/reveal.js#configuration
+          Reveal.initialize({
+            // Push each slide change to the browser history
+            history: true,
+
+            // Optional reveal.js plugins
+            dependencies: [
+              { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+              { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+              { src: 'reveal.js/plugin/notes/notes.js', async: true }
+            ]
+          });
+        </script>
+
+  to this:
+
+        <script>
+          // Full list of configuration options available at:
+          // https://github.com/hakimel/reveal.js#configuration
+          Reveal.initialize({
+            // Push each slide change to the browser history
+            history: true,
+
+            transition: 'fade',
+
+            // Optional reveal.js plugins
+            dependencies: [
+              { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+              { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+              { src: 'reveal.js/plugin/notes/notes.js', async: true }
+            ]
+          });
+        </script>
+
+* To lighten the background of images, I changed the `reveal.js\css\theme\black.css` file to this:
+
+        /*********************************************
+         * IMAGES
+         *********************************************/
+        .reveal section img {
+          margin: 15px 0px;
+          background: rgba(255, 255, 255, 0.99);
+          border: 4px solid #fff;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }

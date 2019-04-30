@@ -1,0 +1,299 @@
+EESchema Schematic File Version 4
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED_ALT D?
+U 1 1 5C66CF96
+P 5425 3675
+F 0 "D?" H 5418 3891 50  0001 C CNN
+F 1 "LED_ALT" H 5418 3800 50  0001 C CNN
+F 2 "" H 5425 3675 50  0001 C CNN
+F 3 "~" H 5425 3675 50  0001 C CNN
+	1    5425 3675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2825 5125 2825
+Wire Wire Line
+	4550 3425 5575 3425
+Wire Wire Line
+	4550 3950 5550 3950
+Wire Wire Line
+	4550 4450 5550 4450
+$Comp
+L Device:LED_ALT D?
+U 1 1 5C6866B1
+P 5400 4200
+F 0 "D?" H 5393 4416 50  0001 C CNN
+F 1 "LED_ALT" H 5393 4325 50  0001 C CNN
+F 2 "" H 5400 4200 50  0001 C CNN
+F 3 "~" H 5400 4200 50  0001 C CNN
+	1    5400 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ALT D?
+U 1 1 5C686BA6
+P 5400 4650
+F 0 "D?" H 5393 4866 50  0001 C CNN
+F 1 "LED_ALT" H 5393 4775 50  0001 C CNN
+F 2 "" H 5400 4650 50  0001 C CNN
+F 3 "~" H 5400 4650 50  0001 C CNN
+	1    5400 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ALT D?
+U 1 1 5C686FC1
+P 6175 3075
+F 0 "D?" H 6168 3291 50  0001 C CNN
+F 1 "LED_ALT" H 6168 3200 50  0001 C CNN
+F 2 "" H 6175 3075 50  0001 C CNN
+F 3 "~" H 6175 3075 50  0001 C CNN
+	1    6175 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ALT D?
+U 1 1 5C6875FD
+P 6150 4200
+F 0 "D?" H 6143 4416 50  0001 C CNN
+F 1 "LED_ALT" H 6143 4325 50  0001 C CNN
+F 2 "" H 6150 4200 50  0001 C CNN
+F 3 "~" H 6150 4200 50  0001 C CNN
+	1    6150 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ALT D?
+U 1 1 5C687C5D
+P 6150 4650
+F 0 "D?" H 6143 4866 50  0001 C CNN
+F 1 "LED_ALT" H 6143 4775 50  0001 C CNN
+F 2 "" H 6150 4650 50  0001 C CNN
+F 3 "~" H 6150 4650 50  0001 C CNN
+	1    6150 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ALT D?
+U 1 1 5C6881A1
+P 6850 3075
+F 0 "D?" H 6843 3291 50  0001 C CNN
+F 1 "LED_ALT" H 6843 3200 50  0001 C CNN
+F 2 "" H 6850 3075 50  0001 C CNN
+F 3 "~" H 6850 3075 50  0001 C CNN
+	1    6850 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ALT D?
+U 1 1 5C6886AF
+P 6850 3675
+F 0 "D?" H 6843 3891 50  0001 C CNN
+F 1 "LED_ALT" H 6843 3800 50  0001 C CNN
+F 2 "" H 6850 3675 50  0001 C CNN
+F 3 "~" H 6850 3675 50  0001 C CNN
+	1    6850 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ALT D?
+U 1 1 5C688CC1
+P 6850 4650
+F 0 "D?" H 6843 4866 50  0001 C CNN
+F 1 "LED_ALT" H 6843 4775 50  0001 C CNN
+F 2 "" H 6850 4650 50  0001 C CNN
+F 3 "~" H 6850 4650 50  0001 C CNN
+	1    6850 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ALT D?
+U 1 1 5C689474
+P 7525 3075
+F 0 "D?" H 7518 3291 50  0001 C CNN
+F 1 "LED_ALT" H 7518 3200 50  0001 C CNN
+F 2 "" H 7525 3075 50  0001 C CNN
+F 3 "~" H 7525 3075 50  0001 C CNN
+	1    7525 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ALT D?
+U 1 1 5C689CCF
+P 7525 3675
+F 0 "D?" H 7518 3891 50  0001 C CNN
+F 1 "LED_ALT" H 7518 3800 50  0001 C CNN
+F 2 "" H 7525 3675 50  0001 C CNN
+F 3 "~" H 7525 3675 50  0001 C CNN
+	1    7525 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ALT D?
+U 1 1 5C68A291
+P 7525 4175
+F 0 "D?" H 7518 4391 50  0001 C CNN
+F 1 "LED_ALT" H 7518 4300 50  0001 C CNN
+F 2 "" H 7525 4175 50  0001 C CNN
+F 3 "~" H 7525 4175 50  0001 C CNN
+	1    7525 4175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6325 3075 6325 2825
+Connection ~ 6325 2825
+Wire Wire Line
+	6325 2825 7000 2825
+Wire Wire Line
+	7000 3075 7000 2825
+Connection ~ 7000 2825
+Wire Wire Line
+	7000 2825 7675 2825
+Wire Wire Line
+	7675 3075 7675 2825
+Wire Wire Line
+	5575 3675 5575 3425
+Connection ~ 5575 3425
+Wire Wire Line
+	5575 3425 5875 3425
+Wire Wire Line
+	7000 3675 7000 3425
+Connection ~ 7000 3425
+Wire Wire Line
+	7000 3425 7675 3425
+Wire Wire Line
+	7675 3675 7675 3425
+Wire Wire Line
+	5550 4200 5550 3950
+Connection ~ 5550 3950
+Wire Wire Line
+	5550 3950 6300 3950
+Wire Wire Line
+	6300 4200 6300 3950
+Connection ~ 6300 3950
+Wire Wire Line
+	6300 3950 6575 3950
+Wire Wire Line
+	7675 4175 7675 3950
+Wire Wire Line
+	5550 4650 5550 4450
+Connection ~ 5550 4450
+Wire Wire Line
+	5550 4450 6300 4450
+Wire Wire Line
+	6300 4650 6300 4450
+Connection ~ 6300 4450
+Wire Wire Line
+	6300 4450 7000 4450
+Wire Wire Line
+	7000 4650 7000 4450
+Connection ~ 7000 4450
+Wire Wire Line
+	7000 4450 7250 4450
+Wire Wire Line
+	5275 3675 5125 3675
+Connection ~ 5125 3675
+Wire Wire Line
+	5125 3675 5125 4200
+Wire Wire Line
+	5250 4200 5125 4200
+Connection ~ 5125 4200
+Wire Wire Line
+	5125 4200 5125 4650
+Wire Wire Line
+	5250 4650 5125 4650
+Wire Wire Line
+	6000 4650 5875 4650
+Wire Wire Line
+	6000 4200 5875 4200
+Connection ~ 5875 4200
+Wire Wire Line
+	5875 4200 5875 4650
+Wire Wire Line
+	6025 3075 5875 3075
+Wire Wire Line
+	5875 3075 5875 3425
+Wire Wire Line
+	6700 3075 6575 3075
+Wire Wire Line
+	6575 3075 6575 3675
+Wire Wire Line
+	6700 3675 6575 3675
+Connection ~ 6575 3675
+Wire Wire Line
+	6575 3675 6575 3950
+Wire Wire Line
+	6700 4650 6575 4650
+Wire Wire Line
+	7375 4175 7250 4175
+Connection ~ 7250 4175
+Wire Wire Line
+	7250 4175 7250 4450
+Wire Wire Line
+	7375 3675 7250 3675
+Connection ~ 7250 3675
+Wire Wire Line
+	7250 3675 7250 4175
+Wire Wire Line
+	7375 3075 7250 3075
+Wire Wire Line
+	7250 3075 7250 3675
+Connection ~ 5125 2825
+Wire Wire Line
+	5125 2825 5125 3675
+Wire Wire Line
+	5125 2825 6325 2825
+Connection ~ 5875 3425
+Wire Wire Line
+	5875 3425 7000 3425
+Wire Wire Line
+	5875 3425 5875 4200
+Connection ~ 6575 3950
+Wire Wire Line
+	6575 3950 7675 3950
+Wire Wire Line
+	6575 3950 6575 4650
+$EndSCHEMATC
