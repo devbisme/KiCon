@@ -8,5 +8,6 @@ with plt.xkcd():
     fig1, ax1 = plt.subplots()
     ax1.pie(sizes, explode=explode, colors=('w','w','w','w','w'), wedgeprops={'linewidth':1, 'edgecolor':'black'}, labels=labels, startangle=300)
     ax1.axis('equal')
+    fig1.suptitle('Classification of Reddit Responses', fontsize=20)
 
     plt.show()
